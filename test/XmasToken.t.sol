@@ -22,7 +22,7 @@ contract XmasTokenTest is Test {
         token = new XmasToken("Test Token", "TEST", 1_000_000 * 10**18);
         
         // Deploy another token for testing airdrop functionality
-        airdropToken = new XmasToken("Xmas Token", "AIRDROP", 1_000_000 * 10**18);
+        airdropToken = new XmasToken("Xmas Token", "XMAS123", 1_000_000 * 10**18);
     }
 
     function testInitialSupply() public view {

@@ -6,9 +6,7 @@ import "../src/XmasToken.sol";
 
 contract DeployXmasToken is Script {
     function run() external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        
-        vm.startBroadcast(deployerPrivateKey);
+        vm.startBroadcast();
 
         // Deploy token with 1 million initial supply
         XmasToken token = new XmasToken(
